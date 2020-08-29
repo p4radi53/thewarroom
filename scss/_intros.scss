@@ -1,0 +1,47 @@
+.intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: calc(50vh - 100px);
+  min-height: 300px;
+  text-align: center;
+  color: $white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro-title {
+    font-size: 3em;
+    text-transform: none;
+  }
+
+  .intro-subtitle {
+    font-size: 2em;
+    text-transform: none;
+  }
+}
+
+.intro-event {
+  background-image: url("/img/palac_kultury.jpg");
+}
+.intro-register {
+  background-image: url("/img/palac_kultury.jpg");
+}
+
+.intro-faq {
+  background-image: url("/img/palac_kultury.jpg");
+}
+
+.intro-about {
+  background-image: url("/img/palac_kultury.jpg");
+}
+
+.intro-index {
+  background-image: url("/img/closing_ceremony.jpg");
+  background-attachment: scroll;
+  height: calc(80vh - 100px);
+  background-position: center center;
+  min-height: 400px;
+}

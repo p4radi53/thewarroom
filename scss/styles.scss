@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "variables";
+@import "header";
+@import "footer";
+@import "intros";
+@import "fonts";
+
+// main settings
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 3em 1.5em;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5em;
+}
+
+a.btn-primary {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 0.1em solid $primary;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-weight: 300;
+
+  text-align: center;
+  transition: all 0.2s;
+  font-style: normal;
+  border-radius: 10px;
+
+  background-color: $primary;
+  border: solid $white;
+  color: $white;
+
+  &:hover {
+    border: solid $primary;
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.section-divider {
+  border: none;
+  border-top: dotted 5px;
+  border-color: $grey;
+  height: 0;
+}
+
+@media (max-width: 768px) {
+  p {
+    text-align: left;
+  }
+}
+
+//index
+section.index-newsletter {
+  background-color: $primary;
+  color: $white;
+  padding: 1.5em 1.5em;
+
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+section.index-icons {
+  .wrap {
+    position: relative;
+  }
+
+  #wrap-title1::before {
+    background-image: url("/img/svg/globe-europe-solid.svg");
+  }
+  #wrap-title2::before {
+    background-image: url("/img/svg/pen-solid.svg");
+  }
+  #wrap-title3::before {
+    background-image: url("/img/svg/users-solid.svg");
+    width: 30px;
+    height: 30px;
+  }
+}
+.wrap-a {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.5s ease-out;
+  color: $primary;
+  display: inline-block;
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 $primary inset;
+  }
+}
+section.index-partners {
+  text-align: center;
+  color: $primary;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .intro-index {
+    display: none;
+  }
+  h1.partners {
+    font-size: 2rem;
+  }
+}
+
+//Slider
+.slider {
+  position: relative;
+  margin-top: 1.5em;
+  .slide {
+    display: none;
+    img {
+      height: 200px;
+      width: auto;
+    }
+  }
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding: 15px 10px;
+    border-radius: 5px;
+  }
+  #left-arrow {
+    left: 30%;
+  }
+
+  #right-arrow {
+    right: 30%;
+  }
+  .active {
+    background: $primary;
+  }
+}
+@media (max-width: 576px) {
+  #slider {
+    width: 100%;
+  }
+
+  .controls {
+    font-size: 1em;
+  }
+}
+
+//Event
+
+.heading-text {
+  color: $primary;
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+section.event-descriptions {
+  .w {
+    #w-title1:before {
+      background-image: url("/img/svg/calendar-times-solid.svg");
+    }
+    #w-title2:before {
+      background-image: url("/img/svg/map-marker-alt-solid.svg");
+    }
+    #w-title3:before {
+      background-image: url("/img/svg/user-solid.svg");
+    }
+  }
+}
+
+//Register
+section.event-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $primary;
+
+  h2.cta-title {
+    color: $white;
+    font-weight: 600;
+    font-size: 2em;
+  }
+  h3.cta-subtitle {
+    color: $white;
+  }
+}
+section.event-process {
+  .heading-text {
+    margin-bottom: 0em;
+  }
+  .process-question {
+    font-style: italic;
+    line-height: 0;
+    margin-top: 2em;
+  }
+}
+
+//FAQ
+section.accordion {
+  button {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+
+  .accord {
+    background-color: $primary-light;
+    color: $black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .active,
+  .accord:hover {
+    background-color: darken($primary-light, 10%);
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+}

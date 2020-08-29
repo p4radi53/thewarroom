@@ -1,0 +1,31 @@
+//Footer
+.footer {
+  background: $primary;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+
+  .flex {
+    justify-content: center;
+
+    i {
+      margin: 4.5rem;
+      font-size: 4rem;
+    }
+
+    .footer-content {
+      margin: 100px;
+    }
+  }
+
+  .ending {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  i {
+    font-size: 3rem !important;
+  }
+}

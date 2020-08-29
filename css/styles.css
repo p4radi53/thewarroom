@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+header {
+  background-color: transparent;
+}
+header .container .head-wrap {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffcd33;
+  height: 100px;
+}
+header .container .head-wrap .logo {
+  margin-left: 1.5em;
+  height: 75%;
+}
+header .container .head-wrap .logo img {
+  height: 100%;
+  width: auto;
+}
+header .container .head-wrap .toggle-button {
+  position: absolute;
+  top: 17px;
+  right: 0.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+}
+header .container .head-wrap .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffcd33;
+  border-radius: 10px;
+}
+header .container .head-wrap nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+}
+header .container .head-wrap nav ul li.nav-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.5s ease-out;
+}
+header .container .head-wrap nav ul li.nav-link:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 -1px 0 0 white inset, 0 -5px 0 0 #ffcd33 inset;
+}
+header .container .head-wrap nav ul li.nav-link::selection {
+  color: white;
+  background: #ffcd33;
+}
+header .container .head-wrap nav ul li.nav-link a {
+  text-decoration: none;
+  color: #1d190d;
+  padding: 1rem;
+  display: block;
+  box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 transparent inset;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+header .container .head-wrap nav ul li.nav-link.active {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 -1px 0 0 white inset, 0 -5px 0 0 #ffcd33 inset;
+}
+header .container .head-wrap nav ul li.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container .head-wrap nav ul li.nav-icons i {
+  padding: 1rem 0.5rem;
+  color: #1d190d;
+}
+header .container .head-wrap nav ul li.nav-icons i:hover {
+  color: #ffcd33;
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex !important;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav li {
+    text-align: center;
+  }
+  nav li a {
+    padding: 0.5rem 1rem;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer {
+  background: #ffcd33;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+.footer .flex {
+  justify-content: center;
+}
+.footer .flex i {
+  margin: 4.5rem;
+  font-size: 4rem;
+}
+.footer .flex .footer-content {
+  margin: 100px;
+}
+.footer .ending {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  i {
+    font-size: 3rem !important;
+  }
+}
+.intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: calc(50vh - 100px);
+  min-height: 300px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .intro-title {
+  font-size: 3em;
+  text-transform: none;
+}
+.intro .intro-subtitle {
+  font-size: 2em;
+  text-transform: none;
+}
+
+.intro-event {
+  background-image: url("/img/palac_kultury.jpg");
+}
+
+.intro-register {
+  background-image: url("/img/palac_kultury.jpg");
+}
+
+.intro-faq {
+  background-image: url("/img/palac_kultury.jpg");
+}
+
+.intro-about {
+  background-image: url("/img/palac_kultury.jpg");
+}
+
+.intro-index {
+  background-image: url("/img/closing_ceremony.jpg");
+  background-attachment: scroll;
+  height: calc(80vh - 100px);
+  background-position: center center;
+  min-height: 400px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: none;
+  color: #ffcd33;
+}
+
+h4 {
+  color: #ffcd33;
+  font-weight: 600;
+}
+h4:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  float: left;
+  margin-right: 1em;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 3em 1.5em;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5em;
+}
+
+a.btn-primary {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 0.1em solid #ffcd33;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+  transition: all 0.2s;
+  font-style: normal;
+  border-radius: 10px;
+  background-color: #ffcd33;
+  border: solid white;
+  color: white;
+}
+a.btn-primary:hover {
+  border: solid #ffcd33;
+  background-color: white;
+  color: #1d190d;
+}
+
+.section-divider {
+  border: none;
+  border-top: dotted 5px;
+  border-color: #707070;
+  height: 0;
+}
+
+@media (max-width: 768px) {
+  p {
+    text-align: left;
+  }
+}
+section.index-newsletter {
+  background-color: #ffcd33;
+  color: white;
+  padding: 1.5em 1.5em;
+}
+section.index-newsletter h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+section.index-icons .wrap {
+  position: relative;
+}
+section.index-icons #wrap-title1::before {
+  background-image: url("/img/svg/globe-europe-solid.svg");
+}
+section.index-icons #wrap-title2::before {
+  background-image: url("/img/svg/pen-solid.svg");
+}
+section.index-icons #wrap-title3::before {
+  background-image: url("/img/svg/users-solid.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.wrap-a {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.5s ease-out;
+  color: #ffcd33;
+  display: inline-block;
+}
+.wrap-a:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #ffcd33 inset;
+}
+
+section.index-partners {
+  text-align: center;
+  color: #ffcd33;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .intro-index {
+    display: none;
+  }
+
+  h1.partners {
+    font-size: 2rem;
+  }
+}
+.slider {
+  position: relative;
+  margin-top: 1.5em;
+}
+.slider .slide {
+  display: none;
+}
+.slider .slide img {
+  height: 200px;
+  width: auto;
+}
+.slider .controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.slider #left-arrow {
+  left: 30%;
+}
+.slider #right-arrow {
+  right: 30%;
+}
+.slider .active {
+  background: #ffcd33;
+}
+
+@media (max-width: 576px) {
+  #slider {
+    width: 100%;
+  }
+
+  .controls {
+    font-size: 1em;
+  }
+}
+.heading-text {
+  color: #ffcd33;
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+section.event-descriptions .w #w-title1:before {
+  background-image: url("/img/svg/calendar-times-solid.svg");
+}
+section.event-descriptions .w #w-title2:before {
+  background-image: url("/img/svg/map-marker-alt-solid.svg");
+}
+section.event-descriptions .w #w-title3:before {
+  background-image: url("/img/svg/user-solid.svg");
+}
+
+section.event-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffcd33;
+}
+section.event-cta h2.cta-title {
+  color: white;
+  font-weight: 600;
+  font-size: 2em;
+}
+section.event-cta h3.cta-subtitle {
+  color: white;
+}
+
+section.event-process .heading-text {
+  margin-bottom: 0em;
+}
+section.event-process .process-question {
+  font-style: italic;
+  line-height: 0;
+  margin-top: 2em;
+}
+
+section.accordion button {
+  font-size: 1em;
+}
+section.accordion p {
+  font-size: 0.8em;
+}
+section.accordion .accord {
+  background-color: #fff1c7;
+  color: #1d190d;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+section.accordion .active,
+section.accordion .accord:hover {
+  background-color: #ffe494;
+}
+section.accordion .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
