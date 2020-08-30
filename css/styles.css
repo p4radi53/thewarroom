@@ -346,6 +346,10 @@ section.index-partners {
     display: none;
   }
 
+  section.intro-icons .grid {
+    grid-template-columns: 1fr;
+  }
+
   h1.partners {
     font-size: 2rem;
   }
@@ -457,6 +461,11 @@ section.accordion .panel {
   background-color: white;
   display: none;
   overflow: hidden;
+}
+
+section.error h2,
+section.error p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

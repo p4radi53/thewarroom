@@ -133,6 +133,11 @@ section.index-partners {
   .intro-index {
     display: none;
   }
+  section.intro-icons {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
   h1.partners {
     font-size: 2rem;
   }
@@ -259,5 +264,13 @@ section.accordion {
     background-color: white;
     display: none;
     overflow: hidden;
+  }
+}
+
+//404
+section.error {
+  h2,
+  p {
+    text-align: center;
   }
 }
