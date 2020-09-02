@@ -1,0 +1,4 @@
+#robots.txt for http://www.thewarroom.pl
+
+User-agent: *
+Sitemap: https://www.thewarroom.pl/sitemap.xml

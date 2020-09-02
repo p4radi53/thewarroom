@@ -1,27 +1,29 @@
-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 <url>
-<loc>http://thewarroom.pl/</loc>
-<lastmod>2020-09-02T15:33:35+00:00</lastmod>
-<priority>1.00</priority>
+    <loc>http://thewarroom.pl/</loc>
+    <lastmod>2020-09-02T15:33:35+00:00</lastmod>
+    <priority>1.00</priority>
 </url>
 <url>
-<loc>http://thewarroom.pl/event.html</loc>
-<lastmod>2020-09-02T15:33:35+00:00</lastmod>
-<priority>0.80</priority>
+    <loc>http://thewarroom.pl/event.html</loc>
+    <lastmod>2020-09-02T15:33:35+00:00</lastmod>
+    <priority>0.80</priority>
 </url>
 <url>
-<loc>http://thewarroom.pl/register.html</loc>
-<lastmod>2020-09-02T15:33:35+00:00</lastmod>
-<priority>0.80</priority>
+    <loc>http://thewarroom.pl/register.html</loc>
+    <lastmod>2020-09-02T15:33:35+00:00</lastmod>
+    <priority>0.80</priority>
 </url>
 <url>
-<loc>http://thewarroom.pl/about.html</loc>
-<lastmod>2020-09-02T15:33:35+00:00</lastmod>
-<priority>0.64</priority>
+    <loc>http://thewarroom.pl/about.html</loc>
+    <lastmod>2020-09-02T15:33:35+00:00</lastmod>
+    <priority>0.64</priority>
 </url>
 <url>
-<loc>http://thewarroom.pl/faq.html</loc>
-<lastmod>2020-09-02T15:33:35+00:00</lastmod>
-<priority>0.64</priority>
+    <loc>http://thewarroom.pl/faq.html</loc>
+    <lastmod>2020-09-02T15:33:35+00:00</lastmod>
+    <priority>0.64</priority>
 </url>
 </urlset>
