@@ -366,16 +366,6 @@ a.btn-primary:hover {
     text-align: left;
   }
 }
-@media (max-width: 768px) {
-  .hide-mobile {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) {
-  .hide-desktop {
-    display: none !important;
-  }
-}
 section.index-newsletter {
   background-color: #ffcd33;
   color: white;
@@ -600,21 +590,51 @@ section.accordion .accord {
   border: none;
   outline: none;
   transition: 0.4s;
+  position: relative;
+}
+section.accordion .accord::after {
+  content: "";
+  background-image: url("/img/svg/plus-solid.svg");
+  background-repeat: no-repeat;
+  padding: 0.25em;
+  display: block;
+  height: 10px;
+  width: 10px;
+  float: right;
+  text-align: center;
 }
 section.accordion .active,
 section.accordion .accord:hover {
   background-color: #ffe494;
+}
+section.accordion .active::after {
+  background-image: url("/img/svg/minus-solid.svg");
 }
 section.accordion .panel {
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
+  transition: all 1s ease-out;
+}
+section.accordion .panel.active {
+  display: block;
 }
 
 section.error h2,
 section.error p {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .hide-desktop {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

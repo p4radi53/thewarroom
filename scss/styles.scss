@@ -85,18 +85,6 @@ a.btn-primary {
   }
 }
 
-@media (max-width: 768px) {
-  .hide-mobile {
-    display: none !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .hide-desktop {
-    display: none !important;
-  }
-}
-
 //index
 section.index-newsletter {
   background-color: $primary;
@@ -347,10 +335,29 @@ section.accordion {
     border: none;
     outline: none;
     transition: 0.4s;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("/img/svg/plus-solid.svg");
+      background-repeat: no-repeat;
+      padding: 0.25em;
+      display: block;
+      height: 10px;
+      width: 10px;
+      float: right;
+      text-align: center;
+    }
   }
   .active,
   .accord:hover {
     background-color: darken($primary-light, 10%);
+  }
+
+  .active {
+    &::after {
+      background-image: url("/img/svg/minus-solid.svg");
+    }
   }
 
   .panel {
@@ -358,6 +365,10 @@ section.accordion {
     background-color: white;
     display: none;
     overflow: hidden;
+    transition: all 1s ease-out;
+  }
+  .panel.active {
+    display: block;
   }
 }
 
@@ -366,5 +377,17 @@ section.error {
   h2,
   p {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-desktop {
+    display: none !important;
   }
 }
