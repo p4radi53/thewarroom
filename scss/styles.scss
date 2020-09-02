@@ -35,9 +35,15 @@ section {
   display: flex;
 }
 
-.grid {
+.grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 5em;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 5em;
 }
 
@@ -133,11 +139,6 @@ section.index-partners {
   .intro-index {
     display: none;
   }
-  section.intro-icons {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
   h1.partners {
     font-size: 2rem;
   }
@@ -193,6 +194,14 @@ section.index-partners {
 }
 section.event-descriptions {
   .w {
+    .w-title {
+      font-size: 1.5em;
+      &:before {
+        height: 1.5em;
+        width: 1.5em;
+      }
+    }
+
     #w-title1:before {
       background-image: url("/img/svg/calendar-times-solid.svg");
     }
@@ -205,8 +214,55 @@ section.event-descriptions {
   }
 }
 
-//Register
 section.event-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url("/img/seats.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  h2.cta-title {
+    color: $primary;
+    font-weight: 600;
+    font-size: 2em;
+  }
+  h3.cta-subtitle {
+    color: $white;
+  }
+
+  a.btn-primary:hover {
+    background-color: transparent;
+    color: $white;
+  }
+}
+
+section.event-table {
+  .wrap {
+    position: relative;
+  }
+
+  #wrap-title1::before {
+    background-image: url("/img/svg/paste-solid.svg");
+  }
+  #wrap-title2::before {
+    background-image: url("/img/svg/microphone-alt-solid.svg");
+  }
+  #wrap-title3::before {
+    background-image: url("/img/svg/cocktail-solid.svg");
+  }
+  #wrap-title4::before {
+    background-image: url("/img/svg/utensils-solid.svg");
+  }
+}
+
+//Register
+section.register-cta {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,7 +279,7 @@ section.event-cta {
     color: $white;
   }
 }
-section.event-process {
+section.register-process {
   .heading-text {
     margin-bottom: 0em;
   }
