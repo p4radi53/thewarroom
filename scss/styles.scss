@@ -37,13 +37,13 @@ section {
 
 .grid3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   column-gap: 5em;
 }
 
 .grid4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   column-gap: 5em;
 }
 
@@ -85,6 +85,18 @@ a.btn-primary {
   }
 }
 
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
 //index
 section.index-newsletter {
   background-color: $primary;
@@ -114,6 +126,7 @@ section.index-icons {
     height: 30px;
   }
 }
+
 .wrap-a {
   list-style: none;
   display: flex;

@@ -21,8 +21,8 @@ header .container .head-wrap .logo img {
 }
 header .container .head-wrap .toggle-button {
   position: absolute;
-  top: 17px;
-  right: 0.5rem;
+  top: 40px;
+  right: 1.5rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -91,16 +91,60 @@ header .container .head-wrap nav ul li.nav-icons i:hover {
   nav {
     width: 100%;
     display: none;
+    position: absolute;
+    top: 100px;
+    background: #fff1c7;
+    z-index: 99;
   }
   nav ul {
     flex-direction: column;
     width: 100%;
   }
-  nav li {
-    text-align: center;
+  nav li.nav-link {
+    width: 100%;
+    list-style: none;
+    background-color: transparent;
+    transition: background-color 0.5s ease-out;
+    border: none;
   }
-  nav li a {
+  nav li.nav-link:hover {
+    transition: all 0.3s ease-out;
+    background-color: #ffcd33 !important;
+    box-shadow: none !important;
+  }
+  nav li.nav-link::selection {
+    color: white;
+    background: #ffcd33;
+  }
+  nav li.nav-link a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
     padding: 0.5rem 1rem;
+    color: #1d190d;
+    padding: 1rem;
+    display: block;
+    font-weight: 500;
+    text-transform: capitalize;
+    box-shadow: none !important;
+  }
+  nav li.nav-link.active {
+    transition: all 0.3s ease-out;
+    background-color: #ffcd33;
+    box-shadow: none !important;
+  }
+  nav li.nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li.nav-icons i {
+    padding: 1rem 0.5rem;
+    color: #1d190d;
+  }
+  nav li.nav-icons i:hover {
+    color: #ffcd33;
+    transition: all 0.3s ease-out;
   }
 
   nav.active {
@@ -256,13 +300,13 @@ section {
 
 .grid3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   column-gap: 5em;
 }
 
 .grid4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   column-gap: 5em;
 }
 
@@ -298,6 +342,16 @@ a.btn-primary:hover {
 @media (max-width: 768px) {
   p {
     text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .hide-desktop {
+    display: none !important;
   }
 }
 section.index-newsletter {
