@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 
   .intro-title {
     font-size: 3em;
@@ -32,6 +33,7 @@
 
 .intro-faq {
   background-image: url("/img/intros/4faq.png");
+  background-position: left center;
 }
 
 .intro-about {
@@ -39,9 +41,10 @@
 }
 
 .intro-index {
-  background-image: url("/img/intros/1home.jpg");
+  background-image: url("/img/intros/IMG_20191231_124326.jpg");
   background-attachment: scroll;
   height: calc(80vh - 100px);
   background-position: center center;
   min-height: 400px;
+  color: $black;
 }
