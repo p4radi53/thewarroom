@@ -30,7 +30,11 @@ setTimeout(function () {
       console.log(activelink.innerText + "WARN");
     }
   }
-  activelink.classList.add("active");
+  try {
+    activelink.classList.add("active");
+  } catch (e) {
+    console.log(e);
+  }
 
   for (let i = 0; i < navlink.length; i++) {
     navlink[i].addEventListener("mouseenter", function () {

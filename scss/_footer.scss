@@ -9,7 +9,7 @@
 
   .flex {
     align-items: start;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .footer-menu {
       margin: 1.5em;
@@ -20,11 +20,11 @@
       }
     }
     .footer-cta {
-      margin: 1.5em;
+      margin: 1.5em 0;
     }
 
     .footer-description {
-      margin: 1.5em;
+      margin: 1.5em 0;
       align-self: start;
     }
 

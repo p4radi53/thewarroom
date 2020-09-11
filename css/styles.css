@@ -207,7 +207,7 @@ header .container .head-wrap nav ul li.nav-icons i:hover {
 }
 .footer .flex {
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer .flex .footer-menu {
   margin: 1.5em;
@@ -218,10 +218,10 @@ header .container .head-wrap nav ul li.nav-icons i:hover {
   font-style: normal;
 }
 .footer .flex .footer-cta {
-  margin: 1.5em;
+  margin: 1.5em 0;
 }
 .footer .flex .footer-description {
-  margin: 1.5em;
+  margin: 1.5em 0;
   align-self: start;
 }
 .footer .flex i {
