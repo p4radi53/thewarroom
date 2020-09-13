@@ -47,7 +47,8 @@ section {
   column-gap: 5em;
 }
 
-a.btn-primary {
+a.btn-primary,
+input[type="submit"] {
   display: inline-block;
   padding: 0.75em 1.5em;
   border: 0.1em solid $primary;
@@ -142,19 +143,29 @@ section.index-memorial {
   //Slider
   .slider {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
     .slide {
       height: 150px;
 
       display: none;
-      img {
-        height: 200px;
-        width: auto;
+      .quote-content {
+        font-style: italic;
+      }
+      .quote-author {
+        float: right;
+        font-size: 0.85rem;
+
+        &::before {
+          content: "- ";
+        }
       }
     }
     .controls {
       position: absolute;
-      top: 10%;
+      top: 30%;
       font-size: 1.5em;
       padding: 15px 10px;
       border-radius: 5px;
@@ -201,13 +212,14 @@ section.index-memorial {
     }
   }
 }
-
-section.index-partners {
-  padding-top: 0;
+h2.partners {
   text-align: center;
   color: $primary;
   font-weight: 600;
   font-size: 2em;
+}
+section.index-partners {
+  padding-top: 0;
 
   .partners-logo {
     width: 150px;
@@ -243,10 +255,14 @@ section.index-partners {
   font-size: 2em;
   margin-bottom: 1.5em;
 }
+h3.description-title {
+  font-size: 1.5em;
+}
 section.event-descriptions {
   .w {
     .w-title {
       font-size: 1.5em;
+
       &:before {
         height: 1.5em;
         width: 1.5em;
@@ -272,7 +288,7 @@ section.event-cta {
   align-items: center;
   text-align: center;
 
-  background-image: url("/img/seats.jpg");
+  background-image: url("/img/intros/przekierowanie.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -312,6 +328,17 @@ section.event-table {
   }
 }
 
+section.event-2019-photos {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 3em 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 //Register
 section.register-cta {
   display: flex;
@@ -335,9 +362,9 @@ section.register-process {
     margin-bottom: 0em;
   }
   .process-question {
-    font-style: italic;
     line-height: 0;
-    margin-top: 2em;
+    margin-top: 2.5em;
+    font-size: 1.5rem;
   }
 }
 
@@ -347,7 +374,7 @@ section.accordion {
     font-size: 1em;
   }
   p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .accord {
@@ -368,8 +395,8 @@ section.accordion {
       background-repeat: no-repeat;
       padding: 0.5em;
       display: block;
-      height: 10px;
-      width: 10px;
+      height: 2px;
+      width: 2px;
       float: right;
       text-align: center;
     }
@@ -397,6 +424,97 @@ section.accordion {
   }
 }
 
+//About
+section.about-photos {
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2em;
+    text-align: center;
+    &-item {
+      &-img {
+        width: 100%;
+      }
+      @media (max-width: 500px) {
+        .team-item-img {
+          width: 75%;
+        }
+      }
+    }
+    .item-hr {
+      width: 30%;
+      color: $primary;
+    }
+    .item-title {
+      text-transform: none;
+      font-size: 1em;
+      margin: 0;
+      margin-top: 1em;
+    }
+    .item-subtitle {
+      text-transform: none;
+      margin: 0;
+      margin-top: 0.5em;
+      margin-bottom: 2em;
+      font-size: 0.75rem;
+    }
+    i {
+      font-size: 2em;
+    }
+  }
+}
+
+//Newsletter
+section.newsletter-troubleshoot {
+  h2 {
+    margin-bottom: 0.5em;
+  }
+}
+section.newsletter-form {
+  padding-bottom: 0;
+  label {
+    font-family: "Open Sans", sans-serif;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  .indicates-required {
+    span {
+      color: $primary;
+    }
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 0.5em 0;
+  }
+  .mc-field-group {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="submit"] {
+    margin-top: 1.5em;
+  }
+  input[type="email"] {
+    font-family: "Open Sans", sans-serif;
+    width: 50%;
+    border: 2px solid lighten($color: $grey, $amount: 30%);
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 2px 0 $primary;
+    }
+  }
+}
+@media (max-width: 768px) {
+  section.newsletter-form {
+    input[type="email"] {
+      width: 100%;
+    }
+  }
+}
 //404
 section.error {
   h2,

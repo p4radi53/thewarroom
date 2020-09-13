@@ -14,7 +14,7 @@
   max-width: 100%;
 
   .intro-title {
-    font-size: 3em;
+    font-size: 4em;
     text-transform: none;
   }
 
@@ -25,23 +25,23 @@
 }
 
 .intro-event {
-  background-image: url("/img/intros/5event.png");
+  background-image: url("/img/intros/2event.jpeg");
 }
 .intro-register {
-  background-image: url("/img/intros/2register.png");
+  background-image: url("/img/intros/3register.jpeg");
 }
 
 .intro-faq {
-  background-image: url("/img/intros/4faq.png");
+  background-image: url("/img/intros/4faq.jpeg");
   background-position: left center;
 }
 
 .intro-about {
-  background-image: url("/img/intros/3about.png");
+  background-image: url("/img/intros/5about.jpg");
 }
 
 .intro-index {
-  background-image: url("/img/intros/IMG_20191231_124326.jpg");
+  background-image: url("/img/intros/1home.jpg");
   background-attachment: scroll;
   height: calc(80vh - 100px);
   background-position: center center;
