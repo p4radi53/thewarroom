@@ -136,10 +136,6 @@ section.index-memorial {
   align-items: center;
   justify-content: center;
 
-  .slide {
-    max-width: 486px;
-    margin: 1.5em;
-  }
   //Slider
   .slider {
     position: relative;
@@ -149,6 +145,8 @@ section.index-memorial {
 
     .slide {
       height: 150px;
+      max-width: 486px;
+      margin: 1.5em;
 
       display: none;
       .quote-content {
@@ -219,7 +217,7 @@ h2.partners {
   font-size: 2em;
 }
 section.index-partners {
-  padding-top: 0;
+  padding-top: 1.5em;
 
   .partners-logo {
     width: 150px;
@@ -229,6 +227,9 @@ section.index-partners {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     align-items: center;
+    img {
+      justify-self: center;
+    }
   }
 }
 
@@ -288,7 +289,7 @@ section.event-cta {
   align-items: center;
   text-align: center;
 
-  background-image: url("/img/intros/przekierowanie.jpeg");
+  background-image: url("/img/intros/przekierowanie.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -393,10 +394,10 @@ section.accordion {
       content: "";
       background-image: url("/img/svg/plus-solid.svg");
       background-repeat: no-repeat;
-      padding: 0.5em;
       display: block;
-      height: 2px;
-      width: 2px;
+      margin-left: 1em;
+      height: 15px;
+      width: 15px;
       float: right;
       text-align: center;
     }
@@ -425,6 +426,15 @@ section.accordion {
 }
 
 //About
+@media (max-width: 768px) {
+  section.about-description {
+    text-align: center;
+    p {
+      text-align: justify;
+    }
+  }
+}
+
 section.about-photos {
   .team {
     display: grid;

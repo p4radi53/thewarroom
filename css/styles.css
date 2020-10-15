@@ -279,15 +279,15 @@ header .container .head-wrap nav ul li.nav-icons i:hover {
 }
 
 .intro-event {
-  background-image: url("/img/intros/2event.jpeg");
+  background-image: url("/img/intros/2event.jpg");
 }
 
 .intro-register {
-  background-image: url("/img/intros/3register.jpeg");
+  background-image: url("/img/intros/3register.jpg");
 }
 
 .intro-faq {
-  background-image: url("/img/intros/4faq.jpeg");
+  background-image: url("/img/intros/4faq.jpg");
   background-position: left center;
 }
 
@@ -425,10 +425,6 @@ section.index-memorial {
   align-items: center;
   justify-content: center;
 }
-section.index-memorial .slide {
-  max-width: 486px;
-  margin: 1.5em;
-}
 section.index-memorial .slider {
   position: relative;
   display: flex;
@@ -437,6 +433,8 @@ section.index-memorial .slider {
 }
 section.index-memorial .slider .slide {
   height: 150px;
+  max-width: 486px;
+  margin: 1.5em;
   display: none;
 }
 section.index-memorial .slider .slide .quote-content {
@@ -500,7 +498,7 @@ h2.partners {
 }
 
 section.index-partners {
-  padding-top: 0;
+  padding-top: 1.5em;
 }
 section.index-partners .partners-logo {
   width: 150px;
@@ -510,6 +508,9 @@ section.index-partners .grid6 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   align-items: center;
+}
+section.index-partners .grid6 img {
+  justify-self: center;
 }
 
 @media (max-width: 768px) {
@@ -560,7 +561,7 @@ section.event-cta {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("/img/intros/przekierowanie.jpeg");
+  background-image: url("/img/intros/przekierowanie.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -652,10 +653,10 @@ section.accordion .accord::after {
   content: "";
   background-image: url("/img/svg/plus-solid.svg");
   background-repeat: no-repeat;
-  padding: 0.5em;
   display: block;
-  height: 2px;
-  width: 2px;
+  margin-left: 1em;
+  height: 15px;
+  width: 15px;
   float: right;
   text-align: center;
 }
@@ -677,6 +678,14 @@ section.accordion .panel.active {
   display: block;
 }
 
+@media (max-width: 768px) {
+  section.about-description {
+    text-align: center;
+  }
+  section.about-description p {
+    text-align: justify;
+  }
+}
 section.about-photos .team {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
