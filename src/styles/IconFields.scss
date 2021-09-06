@@ -1,0 +1,42 @@
+@import 'colors';
+
+.iconfields {
+    color: $primary;
+}
+
+.iconfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1em 0;
+
+    .iconfield-wrap {
+        display: flex;
+        flex-direction: column;
+
+        .iconfield-header {
+            display: flex;
+            margin: 1em 0;
+            
+            .iconfield-icon {
+                font-size: 1.5rem;
+                margin-left: 0;
+                margin-right: 1em;
+            }
+        
+        }
+    }
+
+    p {
+        color: $black;
+        text-align: justify;
+        margin: 1em 0;
+    }
+    a {
+        color: $primary;
+    }
+
+    .iconfield-link-wrapper {
+        display: block;
+    }
+}

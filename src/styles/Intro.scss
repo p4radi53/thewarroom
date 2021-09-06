@@ -1,0 +1,21 @@
+@import '_colors';
+
+.intro {
+    color: $white;
+    background-image: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(50vh - 80px);
+    min-height: 300px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.intro-high {
+    color: $black;
+    height: calc(70vh - 80px);
+}

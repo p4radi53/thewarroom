@@ -1,0 +1,15 @@
+@import '../../styles/colors';
+
+.register-cta {
+    background-color: $primary;
+    text-align: center;
+    color: $white !important;
+}
+
+.register-description-wrapper {
+    margin: 2em 0;
+    a, Link {
+        color: $primary;
+    }
+}
+

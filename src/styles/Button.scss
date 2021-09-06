@@ -1,0 +1,36 @@
+@import 'colors';
+
+.btn {
+    display: inline-block;
+    padding: .75em 1.5em;
+    margin-top: 1em;
+    border: .2em solid;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+    transition: all .25s;
+    font-style: normal;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}
+
+.btn-secondary {
+    background-color: $primary;
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+        background-color: transparent;
+    }
+}

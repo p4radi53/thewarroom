@@ -1,0 +1,51 @@
+@import 'colors';
+
+.faq-field {
+    margin: 2em 0;
+}
+
+.faq-question {
+    &::after {
+        content: "+";
+        float: right;
+        padding-right: 0.5em;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.faq-question.active {
+    &::after {
+        content: "-";
+    }
+}
+
+.faq-hr {
+    border-top: 2px solid $primary;
+    margin: .5em 0;
+    width: 100%;
+}
+
+.faq-hide {
+    display: none;
+    transform-origin: left top;
+    transform: scaleY(0);
+}
+
+.faq-hide.active {
+    display: block;
+    transform-origin: left top;
+    animation: sweep-in .5s ease-in-out;
+    transform: scaleY(1);
+}
+
+@keyframes sweep-in {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
