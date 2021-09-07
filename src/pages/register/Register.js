@@ -18,7 +18,7 @@ function Register() {
         <section className="register-description">
             <div className="container">
                 <h3 className="primary">The Register Process</h3>
-                <p>The WARroom welcomes CEMS MIM students from all around the world. This year the conference fee is 10€ and open to all applicants.</p>
+                <p>The WARroom welcomes CEMS MIM students from all around the world. This year the conference fee is 40€ and open to all applicants.</p>
                 <div className="register-description-wrapper">
                     <h5>How to register?</h5>
                     <p>Submit your application by filling the form linked here once the application is open.</p>
@@ -29,7 +29,7 @@ function Register() {
                 </div>
                 <div className="register-description-wrapper">
                     <h5>What is the fee to participate?</h5>
-                    <p>This year the conference fee is 10€ and open to all applicants. The application will be open soon.</p>
+                    <p>This year the conference fee is 40€ and open to all applicants. The application will be open soon.</p>
                 </div>
                 <div className="register-description-wrapper">
                     <h5>Want to know more?</h5>

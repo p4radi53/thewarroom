@@ -23,7 +23,7 @@ let FAQSectionValues = [
     },
     {
         question: "How much does it cost to participate?",
-        answer: "Participation fee for the 2020 edition is 10 €.",
+        answer: "Participation fee for the 2021 edition is 40 €.",
     },
     {
         question: "Which language(s) will be used?",
