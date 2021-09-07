@@ -17,7 +17,7 @@ function Footer() {
                     "gap": ".5em"
                 }}>
                     <a href="https://www.facebook.com/thewarroomconference" className="footer-link"><i className="fab fa-facebook-square"></i></a>
-                    <a href="#" className="footer-link"><i className="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/the-warroom-warsaw-consulting-conference/" className="footer-link"><i className="fab fa-linkedin"></i></a>
                 </div>
                 <p className="footer-copyright">
                 © Copyright CEMS Club Warsaw 2021

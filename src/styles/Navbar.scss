@@ -220,6 +220,10 @@ nav {
         opacity: 0;
         background-color: lighten($primary, 30);
         transition: all 0.5s ease;
+
+        .nav-list li a {
+            display: none;
+        }
     }
 
     .nav-collapse.active {
@@ -228,5 +232,12 @@ nav {
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+
+        .nav-list li a {
+            display: block;
+            width: 100%;
+        }
     }
+
+    
 }

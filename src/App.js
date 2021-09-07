@@ -17,15 +17,18 @@ import Event from './pages/event/Event';
 import Register from './pages/register/Register';
 import FAQ from './pages/faq/FAQ';
 import About from './pages/about/About';
+import NotFound from './pages/notfound/NotFound';
 
 
 function App() {
+  let title = "";
+
   return (
       <>
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         <script src="https://kit.fontawesome.com/039bb8f9f5.js" crossorigin="anonymous"></script>
-        <title>ABA</title>
+        <title>WARRoom Conference</title>
       </Helmet>
       
       <Router>
@@ -49,6 +52,9 @@ function App() {
             </Route>
             <Route path="/about" exact>
               <About/>
+            </Route>
+            <Route>
+              <NotFound/>
             </Route>
           </Switch>
         </main>

@@ -41,7 +41,7 @@ function Navbar() {
             <div className="container">
                 <nav>
                     <Link to="/">
-                        <img src="/logo_WR.jpg" alt="Logo WARroom" className="nav-logo" />
+                        <img src="/logo_WR.jpg" onClick={() => toggleIsOn(false)} alt="Logo WARroom" className="nav-logo" />
                     </Link>
                     {
                         isMobile ?
@@ -60,7 +60,7 @@ function Navbar() {
                             })
                             }
                             <li><a href="https://www.facebook.com/thewarroomconference" className="nav-link"><i className="fab fa-facebook-square"></i></a></li>
-                            <li><a href="#" className="nav-link"><i className="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/the-warroom-warsaw-consulting-conference/" className="nav-link"><i className="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </nav>
