@@ -24,6 +24,12 @@ let teamMembers = [
         photoURL: "/images/team2021/jakub_klicki.jpg",
     },
     {
+        name: "Dominik Mikulski",
+        position: "Head of Entertainment",
+        linkedin: "https://www.linkedin.com/in/dominik-mikulski-047998204/",
+        photoURL: "/images/team2021/dominik_mikulski.jpg",
+    },
+    {
         name: "Zuzanna Dwojak",
         position: "Head of Marketing",
         linkedin: "https://www.linkedin.com/in/zuzanna-dwojak/",
@@ -76,7 +82,7 @@ let teamMembers = [
         position: "Partnerships Team",
         linkedin: "https://www.linkedin.com/in/wiktor-koszada-bb6800203/",
         photoURL: "/images/team2021/wiktor_koszada.jpg",
-    },
+    }, 
 ]
 
 function TeamMember(props) {

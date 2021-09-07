@@ -98,7 +98,7 @@ function Event() {
                 <Button
                     buttonType="secondary"
                     buttonInnerText="Our Facebook"
-                    buttonURL="#"
+                    buttonURL="https://www.facebook.com/thewarroomconference"
                 />
             </div> 
         </section>

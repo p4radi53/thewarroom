@@ -36,49 +36,36 @@ function Navbar() {
     const [isOn, toggleIsOn] = useState(false);
     const isMobile = useMediaQuery({ query: '(max-width: 960px)'});
 
-    let menu;
-    if((isMobile && isOn) || !isMobile ) {
-        menu = 
-        <div className="wrap">
-            <img src="/logo_WR.jpg" alt="" className="navbar-logo"/>
-            <ul className={`navbar-menu ${isOn ? "navbar-menu-active" : "navbar-menu-disabled"}`}>
-                {
-                MenuItems.map((item, index) => {
-                    return (
-                        <li key={index} onClick={() => toggleIsOn(false)}><Link className="navbar-link" to={item.url}>{item.title}</Link></li>
-                        
-                        
-                    )
-                })
-                }
-                <div className="navbar-icons">
-                    <a href="#" className="navbar-link"><i className="fa fa-facebook"></i></a>
-                    <a href="#" className="navbar-link"><i className="fa fa-linkedin"></i></a>
-                </div>
-            </ul>
-        </div>
-    } else {
-        menu = null
-    }
     return (
-        <>
-        <nav className="navbar">
+        <header>
             <div className="container">
-            {
-                isMobile ?
-                <div className="navbar-menu-icon" onClick={() => 
-                    toggleIsOn(!isOn)}>
-                    <i className={isOn ? "fas fa-times" : "fas fa-bars"}></i>
-                </div>
-                :
-                null
-            }
-            {menu}
-            
-            
+                <nav>
+                    <Link to="/">
+                        <img src="/logo_WR.jpg" alt="Logo WARroom" className="nav-logo" />
+                    </Link>
+                    {
+                        isMobile ?
+                        <div className="nav-toggler" onClick={() => toggleIsOn(!isOn)}>
+                            <i className={isOn ? "fas fa-times" : "fas fa-bars"}></i>
+                        </div> :
+                        <div></div>
+                    }
+                    <div className={`nav-collapse ${isOn ? 'active' : ''}`}>
+                        <ul className="nav-list">
+                            {
+                            MenuItems.map((item, index) => {
+                                return (
+                                    <li key={index} onClick={() => toggleIsOn(false)}><Link className="nav-link" to={item.url}>{item.title}</Link></li>
+                                )
+                            })
+                            }
+                            <li><a href="https://www.facebook.com/thewarroomconference" className="nav-link"><i className="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#" className="nav-link"><i className="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
-        </>
+        </header>
     )
 }
 
