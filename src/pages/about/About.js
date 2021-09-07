@@ -24,6 +24,12 @@ let teamMembers = [
         photoURL: "/images/team2021/jakub_klicki.jpg",
     },
     {
+        name: "Radosław Fedak",
+        position: "Head of Logistics",
+        linkedin: "https://www.linkedin.com/in/rados%C5%82aw-fedak-5a1b861b8/",
+        photoURL: "/images/team2021/radoslaw_fedak.jpg",
+    },
+    {
         name: "Dominik Mikulski",
         position: "Head of Entertainment",
         linkedin: "https://www.linkedin.com/in/dominik-mikulski-047998204/",
@@ -82,7 +88,8 @@ let teamMembers = [
         position: "Partnerships Team",
         linkedin: "https://www.linkedin.com/in/wiktor-koszada-bb6800203/",
         photoURL: "/images/team2021/wiktor_koszada.jpg",
-    }, 
+    },
+
 ]
 
 function TeamMember(props) {

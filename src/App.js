@@ -21,7 +21,6 @@ import NotFound from './pages/notfound/NotFound';
 
 
 function App() {
-  let title = "";
 
   return (
       <>
@@ -35,22 +34,22 @@ function App() {
         <main>
         <Navbar/>
           <Switch>
-            <Route path="/" exact>
+            <Route exact path="/" exact>
               <Home/>
             </Route>
-            <Route path="/partners" exact>
+            <Route exact path="/partners" exact>
               <Partners/>
             </Route>
-            <Route path="/event" exact>
+            <Route exact path="/event" exact>
               <Event/>
             </Route>
-            <Route path="/Register" exact>
+            <Route exact path="/Register" exact>
               <Register/>
             </Route>
-            <Route path="/FAQ" exact>
+            <Route exact path="/FAQ" exact>
               <FAQ/>
             </Route>
-            <Route path="/about" exact>
+            <Route exact path="/about" exact>
               <About/>
             </Route>
             <Route>

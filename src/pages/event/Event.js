@@ -42,7 +42,34 @@ let iconFieldsValues2 = [
         content: "We will provide you with great entertainment and icebreaking opportunities to unwind after a day full of business case studies. There will be no place for boredom."
     }
 ]
-let photoGridItems = [
+let photoGridItems2019 = [
+    {
+        href: "/images/photos2019/1.jpg"
+    },
+    {
+        href: "/images/photos2019/2.jpg"
+    },
+    {
+        href: "/images/photos2019/3.jpg"
+    },
+    {
+        href: "/images/photos2019/4.jpg"
+    },
+    {
+        href: "/images/photos2019/5.jpg"
+    },
+    {
+        href: "/images/photos2019/6.jpg"
+    },
+    {
+        href: "/images/photos2019/7.jpg"
+    },
+    {
+        href: "/images/photos2019/8.jpg"
+    }
+]
+
+let photoGridItems2020 = [
     {
         href: "/images/photos2020/1.jpg"
     },
@@ -54,18 +81,6 @@ let photoGridItems = [
     },
     {
         href: "/images/photos2020/4.jpg"
-    },
-    {
-        href: "/images/photos2020/5.jpg"
-    },
-    {
-        href: "/images/photos2020/6.jpg"
-    },
-    {
-        href: "/images/photos2020/7.jpg"
-    },
-    {
-        href: "/images/photos2020/8.jpg"
     }
 ]
 
@@ -112,9 +127,18 @@ function Event() {
         </section>
         <section>
             <div className="container">
+                <h3 className="primary">The WARroom 2020 highlights</h3>
+                <PhotoGrid
+                    photoGridItems={photoGridItems2020}
+                    gridType="photos"
+                />
+            </div>
+        </section>
+        <section>
+            <div className="container">
                 <h3 className="primary">The WARroom 2019 highlights</h3>
                 <PhotoGrid
-                    photoGridItems={photoGridItems}
+                    photoGridItems={photoGridItems2019}
                     gridType="photos"
                 />
             </div>
