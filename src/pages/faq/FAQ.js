@@ -11,7 +11,7 @@ let FAQSectionValues = [
     },
     {
         question: "When does the WARroom take place?",
-        answer: "In 2020 the WARroom Conference starts on 18th and ends on 20th of November. For the first time the event will be conducted online which gives an opportunity for the people all around the world to participate from the comfort of their own home.",
+        answer: "The WARroom Consulting Conference 2021 begins on 24th and ends on 26th of November.",
     },
     {
         question: "Who can participate in the WARroom?",
@@ -19,11 +19,11 @@ let FAQSectionValues = [
     },
     {
         question: "How can I apply?",
-        answer: "You will complete the entire application process online. To apply, go to our registration page.",
+        answer: "You can complete the entire application process online. For more information go to the 'Register' bookmark.",
     },
     {
         question: "How much does it cost to participate?",
-        answer: "Participation fee for the 2021 edition is 40 €.",
+        answer: "In 2021, the conference fee is 40€ for only participation, and 100€ for participation and accommodation.",
     },
     {
         question: "Which language(s) will be used?",
