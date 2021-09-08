@@ -31,7 +31,7 @@ function IconFields(props) {
     let iconFieldsValues = props.iconFieldsValues;
     let nCols = iconFieldsValues.length;
 
-    const isMobile = useMediaQuery({ query: '(max-width:960px'});
+    const isMobile = useMediaQuery({ query: '(max-width:1024px'});
 
     return (
         <div className="iconfields" style={

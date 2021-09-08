@@ -51,7 +51,7 @@ let FAQSectionValues = [
     },
     {
         question: "Will there be networking events with the companies?",
-        answer: "Yes. An online event doesn’t have to mean lack of networking opportunities! Participants and representatives of our Partners will take part in the innovative Rotation Dinner and will have a chance to build new exciting relationships. Additionally, for those who will be able to stay in Warsaw during the WARroom, there will be an offline networking event on Friday.",
+        answer: "Of course, we are preparing for you several networking opportunities. Participants and representatives of our Partners will take part in the innovative events such as Rotation Dinner, Wine Tasting and Consulting Coffee, and will have a chance to build new exciting relationships.",
     }
 
 ]

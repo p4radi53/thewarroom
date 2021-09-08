@@ -71,16 +71,16 @@ let photoGridItems2019 = [
 
 let photoGridItems2020 = [
     {
-        href: "/images/photos2020/1.jpg"
+        href: "/images/photos2020/1.png"
     },
     {
-        href: "/images/photos2020/2.jpg"
+        href: "/images/photos2020/2.png"
     },
     {
-        href: "/images/photos2020/3.jpg"
+        href: "/images/photos2020/3.png"
     },
     {
-        href: "/images/photos2020/4.jpg"
+        href: "/images/photos2020/4.png"
     }
 ]
 

@@ -89,6 +89,12 @@ let teamMembers = [
         linkedin: "https://www.linkedin.com/in/wiktor-koszada-bb6800203/",
         photoURL: "/images/team2021/wiktor_koszada.jpg",
     },
+    {  
+
+        name: "Łukasz Kajka",  
+        position: "Entertainment Team",   
+        photoURL: "/images/team2021/lukasz_kajka.jpg",    
+    }, 
 
 ]
 

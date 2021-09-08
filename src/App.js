@@ -27,7 +27,15 @@ function App() {
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         <script src="https://kit.fontawesome.com/039bb8f9f5.js" crossorigin="anonymous"></script>
-        <title>WARRoom Conference</title>
+        <title>WARRoom Consuluting Conference</title>
+        <meta name="description" content="The WARroom gathers CEMS MIM students from around the world to solve business case studies together, learn from consultants and exchange new ideas."></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
+        <meta name="robots" content="index, follow"></meta>
+        <meta property="og:title" content="WARroom Conference 2021" />
+        <meta property="og:description" content="The WARroom gathers CEMS MIM students from around the world to solve business case studies together, learn from consultants and exchange new ideas."/>
+        <meta property="og:image" content="/images/photos2019/1.jpg" />
+        <meta property="og:url" content="https://thewarroom.pl" />
+        <meta property="og:site_name" content="thewarroom.pl" />
       </Helmet>
       
       <Router>

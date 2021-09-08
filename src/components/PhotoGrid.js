@@ -15,7 +15,7 @@ function Photo(props) {
 function PhotoGrid(props) {
     
     let photoGridItems = props.photoGridItems
-    const isMobile = useMediaQuery({ query: '(max-width:960px'});
+    const isMobile = useMediaQuery({ query: '(max-width:1024px'});
 
     let width_mobile;
     let width_desktop;

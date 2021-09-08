@@ -36,7 +36,7 @@ let iconFieldsValues = [
 
 
 function Home() {
-    const isMobile = useMediaQuery({ query: '(max-width: 960px)'});
+    const isMobile = useMediaQuery({ query: '(max-width: 1024px)'});
 
     return (
         <>
