@@ -34,19 +34,10 @@ function IconFields(props) {
     const isMobile = useMediaQuery({ query: '(max-width:1024px'});
 
     return (
-        <div className="iconfields" style={
-        isMobile ?
-            {
-                display: "flex",
-                flexDirection: "column"
-            }
-            :
-            {
-                display: "grid",
-                gridTemplateColumns: `repeat(${nCols}, 1fr)`,
-                gap: "3em"
-            }
-        }>
+        <div className={`iconfields ${isMobile ?
+        "mobile" : ""}`} style={{
+            "gridTemplateColumns": `repeat(${nCols}, 1fr)`,
+        }}>
         {
     iconFieldsValues.map((item, index) => {
             return (

@@ -2,6 +2,8 @@
 
 .iconfields {
     color: $primary;
+    display: grid;
+    gap: 3em;
 }
 
 .iconfield {
@@ -38,5 +40,12 @@
 
     .iconfield-link-wrapper {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .iconfields.mobile {
+        display: flex;
+        flex-direction: column;
     }
 }
