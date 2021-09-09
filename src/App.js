@@ -27,7 +27,7 @@ function App() {
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         <script src="https://kit.fontawesome.com/039bb8f9f5.js" crossorigin="anonymous"></script>
-        <title>WARRoom Consuluting Conference</title>
+        <title>WARroom Consulting Conference</title>
         <meta name="description" content="The WARroom gathers CEMS MIM students from around the world to solve business case studies together, learn from consultants and exchange new ideas."></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
         <meta name="robots" content="index, follow"></meta>
