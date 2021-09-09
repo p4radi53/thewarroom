@@ -43,7 +43,14 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 960px) {
+    .iconfields.mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-device-width: 960px) {
     .iconfields.mobile {
         display: flex;
         flex-direction: column;

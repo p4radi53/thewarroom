@@ -23,7 +23,7 @@ let FAQSectionValues = [
     },
     {
         question: "How much does it cost to participate?",
-        answer: "In 2021, the conference fee is 40€ for only participation, and 100€ for participation and accommodation.",
+        answer: "In 2021, the conference fee is 50€ for only participation, and 100€ for participation and accommodation.",
     },
     {
         question: "Which language(s) will be used?",

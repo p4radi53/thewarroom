@@ -31,7 +31,7 @@ function IconFields(props) {
     let iconFieldsValues = props.iconFieldsValues;
     let nCols = iconFieldsValues.length;
 
-    const isMobile = useMediaQuery({ query: '(max-width:1024px'});
+    const isMobile = useMediaQuery({ query: '(max-width: 960px'});
 
     return (
         <div className={`iconfields ${isMobile ?
@@ -39,7 +39,7 @@ function IconFields(props) {
             "gridTemplateColumns": `repeat(${nCols}, 1fr)`,
         }}>
         {
-    iconFieldsValues.map((item, index) => {
+            iconFieldsValues.map((item, index) => {
             return (
                 <IconField
                     title={item.title}

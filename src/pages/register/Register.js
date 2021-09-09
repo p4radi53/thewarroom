@@ -29,7 +29,7 @@ function Register() {
                 </div>
                 <div className="register-description-wrapper">
                     <h5>What is the fee to participate?</h5>
-                    <p>This year, the conference fee is 40€ for only participation. The application will be open soon.</p>
+                    <p>This year, the conference fee is 50€ for only participation, and 100€ for participation and accommodation.</p>
                 </div>
                 <div className="register-description-wrapper">
                     <h5>Want to know more?</h5>

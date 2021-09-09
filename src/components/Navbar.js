@@ -34,7 +34,7 @@ const MenuItems =  [
 
 function Navbar() {
     const [isOn, toggleIsOn] = useState(false);
-    const isMobile = useMediaQuery({ query: '(max-width: 1024px)'});
+    const isMobile = useMediaQuery({ query: '(max-width: 960px)'});
 
     return (
         <header>

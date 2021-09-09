@@ -7,7 +7,7 @@ import bg from './About.jpg'
 let teamMembers = [
     {
         name: "Zuzanna Brzozowska",
-        position: "Project Coordinator",
+        position: "Project Manager",
         linkedin: "https://www.linkedin.com/in/zuzanna-brzozowska-2a7737205/",
         photoURL: "/images/team2021/zuzanna_brzozowska.jpg",
     },
