@@ -77,6 +77,9 @@ let photoGridItems2020 = [
         href: "/images/photos2020/2.png"
     },
     {
+        href: "/images/photos2020/3.png"
+    },
+    {
         href: "/images/photos2020/4.png"
     }
 ]

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Intro from '../../components/Intro';
+import Button from '../../components/Button';
 
 import './Register.scss'
 
@@ -12,7 +13,13 @@ function Register() {
         <Intro backgroundImage={bg} title="Register"></Intro>
         <section className="register-cta">
             <div className="container">
-                <h3>Registration starts on 22 September 2021</h3>
+                <h3>Registration is open now!</h3>
+                <p>The registration is open until 4 October 2021.</p>
+                <Button 
+                    buttonType="primary"
+                    buttonInnerText="Register Here"
+                    buttonURL="https://form.typeform.com/to/DrGh0VsH"
+                />
             </div>
         </section>
         <section className="register-description">
@@ -21,7 +28,7 @@ function Register() {
                 <p>The WARroom welcomes CEMS MIM Students from all around the world. The application will be open 22 September - 4 October.</p>
                 <div className="register-description-wrapper">
                     <h5>How to register?</h5>
-                    <p>Submit your application by filling the form linked here once the application is open.</p>
+                    <p>Submit your application by filling the form linked <Link to="https://form.typeform.com/to/DrGh0VsH">here</Link>.</p>
                 </div>
                 <div className="register-description-wrapper">
                     <h5>Who is eligible?</h5>

@@ -49,11 +49,16 @@ function Home() {
             <div className="container">
                 <h4 style={{
                     margin: "1em 0"
-                }}>Registration in September</h4>
+                }}>Registration is open now</h4>
                 <p>
-                This year the WARroom Warsaw Consulting Conference will take place on 24-26 November 2021.<br/>For more information, check out our Facebook page.
+                This year the WARroom Warsaw Consulting Conference will take place on 24-26 November 2021.<br/> The application will be open 22 September - 4 October.<br/>For more information, check out our Facebook page.
                 </p>
                 <Button 
+                    buttonType="primary"
+                    buttonInnerText="Register Here"
+                    buttonURL="https://form.typeform.com/to/DrGh0VsH"
+                />
+                <Button
                     buttonType="primary"
                     buttonInnerText="Facebook"
                     buttonURL="https://www.facebook.com/thewarroomconference"

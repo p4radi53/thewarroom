@@ -117,7 +117,7 @@ function About() {
         <section className="aboutus">
             <div className="container">
                 <h3 className="primary">Our 2021 Team</h3>
-                <p>We are a group of students from SGH Warsaw School of Economics who are members of CEMS Club Warsaw. We are dedicated to organize an unforgettable and valuable event for our fellow CEMSies. We would like to give y ou an opportunity of gaining new skills, expanding your professional as well as personal networks.</p>
+                <p>We are a group of students from SGH Warsaw School of Economics who are members of CEMS Club Warsaw. We are dedicated to organize an unforgettable and valuable event for our fellow CEMSies. We would like to give you an opportunity of gaining new skills, expanding your professional as well as personal networks.</p>
                 <div className="team-member-grid">
                     {
                         teamMembers.map((item,index) => {

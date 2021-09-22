@@ -3,10 +3,10 @@ import '../styles/Button.scss'
 
 function Button(props) {
     return (
-        <button className={`btn ${"btn-" + props.buttonType}`} href={props.buttonURL}>
+        <a style={{"marginRight": "1em"}} className={`btn ${"btn-" + props.buttonType}`} href={props.buttonURL}>
             {props.buttonInnerText}
-        </button>
+        </a>
     )
 }
 
-export default Button;
+export default Button;  
