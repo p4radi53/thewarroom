@@ -13,8 +13,5 @@ export const partners2020 = [
     },
     {
         href: "/images/partners2020/Partnerzy-05.png"
-    },
-    {
-        href: "/images/partners2020/Partnerzy-06.png"
-    },
+    }
 ]

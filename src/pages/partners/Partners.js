@@ -8,11 +8,11 @@ import { partners2020 } from '../../content/partners2020';
 function Partners() {
     return (
         <>
-        <Intro backgroundImage={bg} title="2020 Partners"></Intro>
+        <Intro backgroundImage={bg} title="2021 Partners"></Intro>
         <section>
             <div className="container">
                 <h3 className="primary">
-                    2020 Partners
+                    2021 Partners
                 </h3>
                 <PhotoGrid
                     photoGridItems={partners2020}

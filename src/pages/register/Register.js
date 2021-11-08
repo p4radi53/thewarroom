@@ -14,7 +14,7 @@ function Register() {
         <section className="register-cta">
             <div className="container">
                 <h3>Registration is open now!</h3>
-                <p>The registration is open until 4 October 2021.</p>
+                <p>The registration is open until 7 October 2021.</p>
                 <Button 
                     buttonType="primary"
                     buttonInnerText="Register Here"
@@ -25,7 +25,7 @@ function Register() {
         <section className="register-description">
             <div className="container">
                 <h3 className="primary">The Registration Process</h3>
-                <p>The WARroom welcomes CEMS MIM Students from all around the world. The application will be open 22 September - 4 October.</p>
+                <p>The WARroom welcomes CEMS MIM Students from all around the world. The application will be open 22 September - 7 October.</p>
                 <div className="register-description-wrapper">
                     <h5>How to register?</h5>
                     <p>Submit your application by filling the form linked <Link to="https://form.typeform.com/to/DrGh0VsH">here</Link>.</p>

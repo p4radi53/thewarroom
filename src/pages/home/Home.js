@@ -51,7 +51,7 @@ function Home() {
                     margin: "1em 0"
                 }}>Registration is open now</h4>
                 <p>
-                This year the WARroom Warsaw Consulting Conference will take place on 24-26 November 2021.<br/> The application will be open 22 September - 4 October.<br/>For more information, check out our Facebook page.
+                This year the WARroom Warsaw Consulting Conference will take place on 24-26 November 2021.<br/> The application will be open 22 September - 7 October.<br/>For more information, check out our Facebook page.
                 </p>
                 <Button 
                     buttonType="primary"
@@ -77,7 +77,7 @@ function Home() {
                 <h3 className="primary" style={{
                     textAlign: "center"
                 }}>
-                    2020 Partners
+                    2021 Partners
                 </h3>
                 <PhotoGrid
                     photoGridItems={partners2020}
