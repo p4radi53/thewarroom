@@ -3,7 +3,7 @@ import Intro from '../../components/Intro';
 import PhotoGrid from '../../components/PhotoGrid';
 
 import bg from './Partners.jpg';
-import { partners2020 } from '../../content/partners2020';
+import { partners2021 } from '../../content/partners2021';
 
 function Partners() {
     return (
@@ -15,7 +15,7 @@ function Partners() {
                     2021 Partners
                 </h3>
                 <PhotoGrid
-                    photoGridItems={partners2020}
+                    photoGridItems={partners2021}
                     gridType="logos"
                 />
             </div>

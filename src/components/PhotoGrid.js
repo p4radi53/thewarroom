@@ -6,7 +6,7 @@ function Photo(props) {
     return (
         <div className="photo">
             <a href={props.href}>
-                <img src={props.href} alt="" />
+                <img src={props.src} alt="" />
             </a>
         </div>
     )
@@ -41,6 +41,7 @@ function PhotoGrid(props) {
                 photoGridItems.map((item, index) => {
                     return (
                         <Photo
+                            src={item.src}
                             href={item.href}
                             photoURL={item.photoURL}
                             key={index}

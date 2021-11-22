@@ -97,7 +97,7 @@ function Event() {
                 </div>
                 <div className="event-paragraph">
                     <h5>Form of the Conference 2021</h5>
-                    <p>As everyone longs to meet new people, we strongly believe that this year's conference will be held on the spot in Warsaw. However, in the light of the COVID-19 pandemic, the event may be online. What we are certain of is that not only will participants take part in real business case studies organized by our corporate partners, but also they will have less formal occasions to interact.</p>
+                    <p>As everyone longs to meet new people, this year's conference will be held on the spot in Warsaw. What we are certain of is that not only will participants take part in real business case studies organized by our corporate partners, but also they will have less formal occasions to interact.</p>
                 </div>
                 <IconFields
                     iconFieldsValues={iconFieldsValues}

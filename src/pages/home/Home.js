@@ -8,7 +8,7 @@ import Button from '../../components/Button';
 import PhotoGrid from '../../components/PhotoGrid';
 
 import bg from './Home.jpg';
-import { partners2020 } from '../../content/partners2020';
+import { partners2021 } from '../../content/partners2021';
 
 let iconFieldsValues = [
     {
@@ -49,15 +49,16 @@ function Home() {
             <div className="container">
                 <h4 style={{
                     margin: "1em 0"
-                }}>Registration is open now</h4>
+                }}>More Information</h4>
                 <p>
-                This year the WARroom Warsaw Consulting Conference will take place on 24-26 November 2021.<br/> The application will be open 22 September - 7 October.<br/>For more information, check out our Facebook page.
+                {//This year the WARroom Warsaw Consulting Conference will take place on 24-26 November 2021.<br/> The application will be open 22 September - 7 October.<br/>
+                }For more information, check out our Facebook page.
                 </p>
-                <Button 
+                {/*<Button 
                     buttonType="primary"
                     buttonInnerText="Register Here"
                     buttonURL="https://form.typeform.com/to/DrGh0VsH"
-                />
+                />*/}
                 <Button
                     buttonType="primary"
                     buttonInnerText="Facebook"
@@ -80,7 +81,7 @@ function Home() {
                     2021 Partners
                 </h3>
                 <PhotoGrid
-                    photoGridItems={partners2020}
+                    photoGridItems={partners2021}
                     gridType="logos"
                 />
             </div>
