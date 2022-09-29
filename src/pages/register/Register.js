@@ -13,13 +13,13 @@ function Register() {
         <Intro backgroundImage={bg} title="Register"></Intro>
         <section className="register-cta">
             <div className="container">
-                <h3>Registration is not available now</h3>
-                {//<p>The registration is open until 7 October 2021.</p>
+                <h3>Registration is available now</h3>
+                {//<p>The registration is open until 11 October 2022.</p>
                 }
                 <Button 
                     buttonType="primary"
                     buttonInnerText="Register Here"
-                    buttonURL="https://form.typeform.com/to/DrGh0VsH"
+                    buttonURL="https://71ylq1bt2cv.typeform.com/to/HUdHPD9K"
                 />
             </div>
         </section>
@@ -29,7 +29,7 @@ function Register() {
                 <p>The WARroom welcomes CEMS MIM Students from all around the world.</p>
                 <div className="register-description-wrapper">
                     <h5>How to register?</h5>
-                    <p>Submit your application by filling the form linked <a href="https://form.typeform.com/to/DrGh0VsH">here</a>, when the form is open.</p>
+                    <p>Submit your application by filling the form linked <a href="https://71ylq1bt2cv.typeform.com/to/HUdHPD9K">here</a>, when the form is open.</p>
                 </div>
                 <div className="register-description-wrapper">
                     <h5>Who is eligible?</h5>
