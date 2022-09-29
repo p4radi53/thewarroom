@@ -7,11 +7,11 @@ import bg from './FAQ.jpg';
 let FAQSectionValues = [
     {
         question: "What is the WARroom?",
-        answer: "Warsaw Consulting Conference 2021 is one of the biggest Management Consulting Conferences in Poland focused on CEMS MIM students. The WARroom bridges the gap between theory in the classroom & companies reality by confronting students with real business case studies. The event is also an opportunity to meet potential employers and discover new career paths.",
+        answer: "Warsaw Consulting Conference 2022 is one of the biggest Management Consulting Conferences in Poland focused on CEMS MIM students. The WARroom bridges the gap between theory in the classroom & companies reality by confronting students with real business case studies. The event is also an opportunity to meet potential employers and discover new career paths.",
     },
     {
         question: "When does the WARroom take place?",
-        answer: "The WARroom Consulting Conference 2021 begins on 24th and ends on 26th of November.",
+        answer: "The WARroom Consulting Conference 2022 begins on 24th and ends on 26th of November.",
     },
     {
         question: "Who can participate in the WARroom?",
@@ -23,7 +23,7 @@ let FAQSectionValues = [
     },
     {
         question: "How much does it cost to participate?",
-        answer: "In 2021, the conference fee is 50€ for only participation, and 100€ for participation and accommodation.",
+        answer: "In 2022, the conference fee is 50€ for only participation, and 100€ for participation and accommodation.",
     },
     {
         question: "Which language(s) will be used?",
