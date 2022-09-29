@@ -8,7 +8,7 @@ import Button from '../../components/Button';
 import PhotoGrid from '../../components/PhotoGrid';
 
 import bg from './Home.jpg';
-import { partners2021 } from '../../content/partners2021';
+import { partners2022 } from '../../content/partners2022';
 
 let iconFieldsValues = [
     {
@@ -42,8 +42,8 @@ function Home() {
         <>
         <Intro 
             backgroundImage={bg} isHigh={true} 
-            title={isMobile ? "WARroom 2021" : "WARroom | Warsaw Consulting Conference 2021"} 
-            subtitle={isMobile ? null : "November 24-26, 2021 | Warsaw School of Economics | GMT +2"}
+            title={isMobile ? "WARroom 2022" : "WARroom | Warsaw Consulting Conference 2022"} 
+            subtitle={isMobile ? null : "November 23-25, 2022 | Warsaw School of Economics | GMT +2"}
         />
         <section className="home-cta">
             <div className="container">
@@ -51,13 +51,13 @@ function Home() {
                     margin: "1em 0"
                 }}>More Information</h4>
                 <p>
-                {//This year the WARroom Warsaw Consulting Conference will take place on 24-26 November 2021.<br/> The application will be open 22 September - 7 October.<br/>
+                {//This year the WARroom Warsaw Consulting Conference will take place on 23-25 November 2022.<br/> The application will be open 27 September - 7 October.<br/>
                 }For more information, check out our Facebook page.
                 </p>
                 {/*<Button 
                     buttonType="primary"
                     buttonInnerText="Register Here"
-                    buttonURL="https://form.typeform.com/to/DrGh0VsH"
+                    buttonURL="https://71ylq1bt2cv.typeform.com/to/HUdHPD9K"
                 />*/}
                 <Button
                     buttonType="primary"
@@ -78,10 +78,10 @@ function Home() {
                 <h3 className="primary" style={{
                     textAlign: "center"
                 }}>
-                    2021 Partners
+                    2022 Partners
                 </h3>
                 <PhotoGrid
-                    photoGridItems={partners2021}
+                    photoGridItems={partners2022}
                     gridType="logos"
                 />
             </div>
