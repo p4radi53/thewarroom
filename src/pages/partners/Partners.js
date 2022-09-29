@@ -3,19 +3,19 @@ import Intro from '../../components/Intro';
 import PhotoGrid from '../../components/PhotoGrid';
 
 import bg from './Partners.jpg';
-import { partners2021 } from '../../content/partners2021';
+import { partners2022 } from '../../content/partners2022';
 
 function Partners() {
     return (
         <>
-        <Intro backgroundImage={bg} title="2021 Partners"></Intro>
+        <Intro backgroundImage={bg} title="2022 Partners"></Intro>
         <section>
             <div className="container">
                 <h3 className="primary">
                     2021 Partners
                 </h3>
                 <PhotoGrid
-                    photoGridItems={partners2021}
+                    photoGridItems={partners2022}
                     gridType="logos"
                 />
             </div>
