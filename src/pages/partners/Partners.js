@@ -12,7 +12,7 @@ function Partners() {
         <section>
             <div className="container">
                 <h3 className="primary">
-                    2021 Partners
+                    2022 Partners
                 </h3>
                 <PhotoGrid
                     photoGridItems={partners2022}
