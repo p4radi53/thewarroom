@@ -127,15 +127,6 @@ function Event() {
         </section>
         <section>
             <div className="container">
-                <h3 className="primary">The WARroom 2021 highlights</h3>
-                <PhotoGrid
-                    photoGridItems={photoGridItems2021}
-                    gridType="photos"
-                />
-            </div>
-        </section>
-        <section>
-            <div className="container">
                 <h3 className="primary">The WARroom 2020 highlights</h3>
                 <PhotoGrid
                     photoGridItems={photoGridItems2020}
