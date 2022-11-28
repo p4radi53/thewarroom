@@ -57,9 +57,10 @@ function App() {
             <Route exact path="/FAQ" exact>
               <FAQ/>
             </Route>
-            <Route exact path="/about" exact>
+            {/* <Route exact path="/about" exact>
               <About/>
-            </Route>
+            </Route> */} 
+            // temporarily removed
             <Route>
               <NotFound/>
             </Route>

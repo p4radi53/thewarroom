@@ -25,10 +25,11 @@ const MenuItems =  [
         title: "FAQ",
         url: "/FAQ",
     },
-    {
-        title: "About Us",
-        url: "/about"
-    }
+    // {
+    //     title: "About Us",
+    //     url: "/about"
+    // }
+    // removed temporarily
 
 ]
 
